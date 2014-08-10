@@ -22,7 +22,7 @@ powaDoI$DateTime <- strptime(paste(as.character(powaDoI[, "Date"]),
 
 par(mfrow = c(1,1))
 plot(powaDoI$DateTime, powaDoI$Sub_metering_1,type="l", xlab = "", 
-     ylab = "Global Active Power (kilowatts)", col = "black")
+     ylab = "Energy sub metering", col = "black")
 lines(powaDoI$DateTime, powaDoI$Sub_metering_2,col = "red")
 lines(powaDoI$DateTime, powaDoI$Sub_metering_3,col = "blue")
 legend(x = "topright", c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"),
